@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "F:\\Projetos\\C#\\GestaoFinanceira\\GestaoFinanceira\\wwwroot\\css\\yeti.css",
+      "PackagePath": "staticwebassets\\css\\yeti.css"
+    },
+    {
       "Id": "F:\\Projetos\\C#\\GestaoFinanceira\\GestaoFinanceira\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

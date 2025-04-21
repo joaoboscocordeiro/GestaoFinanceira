@@ -320,13 +320,7 @@ F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.Enti
 F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -442,3 +436,8 @@ F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\obj\Debug\net8.0\refint\GestaoF
 F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\obj\Debug\net8.0\GestaoFinanceira.pdb
 F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\obj\Debug\net8.0\GestaoFinanceira.genruntimeconfig.cache
 F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\obj\Debug\net8.0\ref\GestaoFinanceira.dll
+F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Memory.dll
+F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.dll
+F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.dll

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IHNjM2kAxc7ShGEOdrigSOf60RlI4bPzRtaxXnvfIzA=",
+  "Hash": "JXIM9B9aEWdaC9ajoPKEMXlbqwy7FGk9h5j6ZQlgRVQ=",
   "Source": "GestaoFinanceira",
   "BasePath": "_content/GestaoFinanceira",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "F:\\Projetos\\C#\\GestaoFinanceira\\GestaoFinanceira\\wwwroot\\css\\yeti.css",
+      "SourceId": "GestaoFinanceira",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projetos\\C#\\GestaoFinanceira\\GestaoFinanceira\\wwwroot\\",
+      "BasePath": "_content/GestaoFinanceira",
+      "RelativePath": "css/yeti.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\yeti.css"
     },
     {
       "Identity": "F:\\Projetos\\C#\\GestaoFinanceira\\GestaoFinanceira\\wwwroot\\favicon.ico",
