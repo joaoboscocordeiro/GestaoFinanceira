@@ -7,6 +7,7 @@ Projeto de Gerenciamento Financeiro
 
 #### - C# Language
 #### - SQL Server
+#### - Entity Framework
 
 ----------------------------------------------------------------------------------------------------
 
