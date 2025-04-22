@@ -9,3 +9,7 @@ Projeto de Gerenciamento Financeiro
 #### - SQL Server
 
 ----------------------------------------------------------------------------------------------------
+
+<div align-"center">
+  <img src="" width="700px" />
+</div>
