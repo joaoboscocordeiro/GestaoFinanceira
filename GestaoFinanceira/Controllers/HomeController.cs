@@ -61,5 +61,39 @@ namespace GestaoFinanceira.Controllers
 
             return View(financas);
         }
+
+        public IActionResult AdicionarTransacao()
+        {
+            ViewBag.Categorias = _context.Categorias.ToList();
+            ViewBag.Transacoes = _context.Transacaos.ToList();
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Filtrar(string[] filtro)
+        {
+            string id = string.Join("-", filtro);
+            return RedirectToAction("Index", new {ID = id});
+        }
+
+        [HttpPost]
+        public IActionResult AdicionarTransacao(FinanceiroModel financeiro)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Financas.Add(financeiro);
+                _context.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.Categorias = _context.Categorias.ToList();
+                ViewBag.Transacoes = _context.Transacaos.ToList();
+
+                return View(financeiro);
+            }
+        }
     }
 }

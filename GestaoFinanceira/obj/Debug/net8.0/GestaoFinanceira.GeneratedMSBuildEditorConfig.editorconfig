@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = F:\Projetos\C#\GestaoFinanceira\GestaoFinanceira
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/Projetos/C\#/GestaoFinanceira/GestaoFinanceira/Views/Home/AdicionarTransacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGljaW9uYXJUcmFuc2FjYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Projetos/C\#/GestaoFinanceira/GestaoFinanceira/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

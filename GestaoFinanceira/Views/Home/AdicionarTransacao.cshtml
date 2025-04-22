@@ -1,0 +1,43 @@
+﻿@model FinanceiroModel
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<h2>Planejamento Financeiro</h2>
+
+<form asp-action="AdicionarTransacao" asp-controller="Home" method="post">
+
+    <div class="mb-3">
+        <label class="form-label">Descrição:</label>
+        <input class="form-control" type="text" asp-for="Descricao" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Valor (R$):</label>
+        <input class="form-control" type="number" asp-for="Valor" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Categoria:</label>
+        <select
+            asp-for="CategoriaId"
+            class="form-select"
+            asp-items="@(new SelectList(ViewBag.Categorias, "CategoriaId", "Nome"))">
+
+            <option value=""></option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Data da Operação:</label>
+        <input class="form-control" type="date" asp-for="DataDaOperacao" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Trasação:</label>
+        <select asp-for="TransacaoId" class="form-select"
+                asp-items="@(new SelectList(ViewBag.Transacoes, "TransacaoId", "Nome"))">
+
+            <option value=""></option>
+        </select>
+    </div>
+
+    <button class="btn btn-success w-100 mb-2" type="submit">Adicionar</button>
+    <a class="btn btn-danger w-100" asp-action="Index">Cancelar</a>
+
+</form>
