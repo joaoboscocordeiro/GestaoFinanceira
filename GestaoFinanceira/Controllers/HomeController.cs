@@ -86,6 +86,56 @@ namespace GestaoFinanceira.Controllers
             return View(categoria);
         }
 
+        public IActionResult SomatoriaValores()
+        {
+            var resultados = from g in _context.Financas
+                             .Include(x => x.Categoria)
+                             .Include(x => x.Transacao)
+                             .ToList()
+                             group g by new { g.CategoriaId } into total
+                             select new
+                             {
+                                 CategoriaNome = total.First().Categoria.Nome,
+                                 TransacaoNome = total.First().Transacao.Nome,
+                                 DataOperacao = total.First().DataDaOperacao,
+                                 Total = total.Sum(c => c.Valor)
+                             };
+
+            var ganhos = _context.Financas
+                .Include(x => x.Categoria)
+                .Include(x => x.Transacao)
+                .Where(x => x.TransacaoId == "ganho")
+                .Sum(c => c.Valor);
+
+            var gastos = _context.Financas
+                .Include(x => x.Categoria)
+                .Include(x => x.Transacao)
+                .Where(x => x.TransacaoId == "gasto")
+                .Sum(c => c.Valor);
+
+            var diferenca = ganhos - gastos;
+
+            List<RegistrosFinanceiroModel> registros = new List<RegistrosFinanceiroModel>();
+
+            foreach (var resultado in resultados)
+            {
+                var registro = new RegistrosFinanceiroModel()
+                {
+                    CategoriaNome = resultado.CategoriaNome,
+                    TransacaoNome = resultado.TransacaoNome,
+                    DataOperacao = resultado.DataOperacao.ToString("dd/MM/yyyy"),
+                    ValorCategoria = resultado.Total.ToString("F"),
+                    Ganhos = ganhos.ToString("F"),
+                    Gastos = gastos.ToString("F"),
+                    Diferenca = diferenca.ToString("F"),
+                };
+
+                registros.Add(registro);
+            }
+
+            return View(registros);
+        }
+
         [HttpPost]
         public IActionResult Filtrar(string[] filtro)
         {
