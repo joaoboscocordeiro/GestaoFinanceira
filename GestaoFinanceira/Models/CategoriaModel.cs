@@ -6,6 +6,7 @@ namespace GestaoFinanceira.Models
     {
         [Key]
         public string CategoriaId { get; set; }
+        [Required(ErrorMessage = "Digite a categoria!")]
         public string Nome { get; set; }
     }
 }

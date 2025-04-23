@@ -2,7 +2,6 @@ using GestaoFinanceira.Data;
 using GestaoFinanceira.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
 namespace GestaoFinanceira.Controllers
 {
     public class HomeController : Controller
@@ -70,11 +69,50 @@ namespace GestaoFinanceira.Controllers
             return View();
         }
 
+        public IActionResult RemoverTransacao(int id)
+        {
+            var financaId = _context.Financas.Find(id);
+
+            _context.Remove(financaId);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult AdicionarCategoria()
+        {
+            var categoria = new CategoriaModel { CategoriaId = "categoria" };
+
+            return View(categoria);
+        }
+
         [HttpPost]
         public IActionResult Filtrar(string[] filtro)
         {
             string id = string.Join("-", filtro);
             return RedirectToAction("Index", new {ID = id});
+        }
+
+        [HttpPost]
+        public IActionResult AdicionarCategoria(CategoriaModel categoria)
+        {
+            if (ModelState.IsValid)
+            {
+                var categoriaBanco = new CategoriaModel
+                {
+                    CategoriaId = categoria.Nome.ToLower(),
+                    Nome = categoria.Nome,
+                };
+
+                _context.Categorias.Add(categoriaBanco);
+                _context.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(categoria);
+            }
         }
 
         [HttpPost]

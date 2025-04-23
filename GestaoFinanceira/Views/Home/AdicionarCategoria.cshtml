@@ -1,0 +1,19 @@
+﻿@model CategoriaModel
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<h2>Cadastrar Categoria</h2>
+
+<form asp-action="AdicionarCategoria" asp-controller="Home" method="post">
+
+    <input type="hidden" asp-for="CategoriaId" />
+
+    <div class="mb-3">
+        <label class="form-label">Categoria:</label>
+        <input class="form-control" type="text" asp-for="Nome" />
+    </div>
+
+    <button class="btn btn-success w-100 mb-2" type="submit">Adicionar</button>
+    <a class="btn btn-danger w-100" asp-action="Index">Cancelar</a>
+
+</form>
